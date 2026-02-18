@@ -53,7 +53,7 @@ main{
     cursor: pointer;
 }
 .herosection{
-    background-image: url("image1.jpg");
+    background-image: url("images/image1.jpg");
     background-size: cover;
     background-position: center;
     height: 600px;
