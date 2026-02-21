@@ -1,37 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-body
-{
-    background-color:lightblue;
-    opacity: 1;
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-h1{
-    color:red;
-    text-align: center;
-    text-decoration: underline;
-}
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
 
+/* Main Container */
+.invitation {
+    background: #ffffff;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
-.division{
 
-border: red solid;
-padding: 10px;
-background-color: rgb(3, 50, 54);
+/* Left Section */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
 
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
 }
-.first-children{
-    border: rgb(10, 224, 10) solid 2px;
-} 
-#first-chilren-heading{
-    text-align: c;
-}
-#paragraph{
-    font-size: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.second-children {
-    border: rgb(93, 12, 233) solid 2px;
 
+.description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Button */
+.cta button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: #667eea;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #5a67d8;
+}
+
+/* Right Section */
+.right {
+    background: #f7f7fb;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #333;
+}
+
+.detail span {
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .invitation {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
 }
