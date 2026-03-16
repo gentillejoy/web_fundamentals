@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Survey</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!--title-->
+<h1 id="title">Developer Learning Survey</h1>
+
+<p id="description">
+Help us understand your learning experience.
+</p>
+
+<form id="survey-form">
+
+<label id="name-label">Name</label>
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required
+>
+
+<label id="email-label">Email</label>
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required
+>
+
+<label id="number-label">Age</label>
+<input
+type="number"
+id="number"
+min="10"
+max="60"
+placeholder="Age"
+>
+
+<!--droped menu-->
+<label>What is your level?</label>
+<select id="dropdown">
+<option>Select level</option>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</select>
+
+<!--recommendation radio button-->
+<p>Would you recommend coding to others?</p>
+
+<label class="inline">
+<input type="radio" name="recommend" value="yes">
+Yes
+</label>
+
+<label class="inline">
+<input type="radio" name="recommend" value="no">
+No
+</label>
+
+<!--checkbox part-->
+<p>Which topics do you like?</p>
+
+<label class="inline">
+<input type="checkbox" value="html">
+HTML
+</label>
+
+<label class="inline">
+<input type="checkbox" value="css">
+CSS
+</label>
+
+<label class="inline">
+<input type="checkbox" value="javascript">
+JavaScript
+</label>
+
+<!--comment part-->
+<p>Any comments?</p>
+
+<textarea placeholder="Write your suggestion..."></textarea>
+
+<button id="submit">Submit</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
